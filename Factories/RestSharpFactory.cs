@@ -10,7 +10,7 @@ using PrestaSharp.Entities;
 using PrestaSharp.Serializers;
 using RestSharp;
 
-#pragma warning disable 612
+#pragma warning disable 618, 612
 namespace PrestaSharp.Factories
 {
     public abstract class RestSharpFactory
@@ -416,4 +416,4 @@ namespace PrestaSharp.Factories
     }
 }
 
-#pragma warning restore 612
+#pragma warning restore 618, 612
