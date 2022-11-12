@@ -26,7 +26,7 @@ namespace Bukimedia.PrestaSharp.Factories
         public T Add(T Entity)
         {
             long? idAux = Entity.id;
-            Entity.id = null;
+            //Entity.id = null; Disabling to send Id for Forced ID Insert
             List<PrestaSharp.Entities.PrestaShopEntity> Entities = new List<PrestaSharp.Entities.PrestaShopEntity>();
             Entities.Add(Entity);
             RestRequest request = this.RequestForAdd(pluralEntityName, Entities);
